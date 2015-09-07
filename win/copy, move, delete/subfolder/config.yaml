@@ -1,0 +1,43 @@
+os: windows # windows | linux | osx
+level: 1 # Difficulty level 1-5
+status: draft # could be active | disabled | draft
+setup:
+    script: mkfs.py  # This gets run to set up the env for term cmds.
+sequence: # Must be ordered (sequence!)
+    - question_format: md
+      question: >
+        # Change folder
+
+        First display the contents of the current folder.
+        You should see that one of the items is a folder.
+      filesystem: fs1.yaml
+      answer: # This is the answer for this q, and setup for next q
+            term_format: txt
+            term: "dir"
+            termoutput: t1.txt
+    - question_format: md
+      question: >
+        # Change folder
+
+        Now change into that folder.
+      answer: # This is the answer for this q, and setup for next q
+            term_format: txt
+            term: "cd sub"
+    - question_format: md
+      question: >
+        # Change folder
+
+        Now list the contents inside this folder.
+      cwd: sub
+      answer: # This is the answer for this q, and setup for next q
+            term_format: txt
+            term: "dir"
+            termoutput: t3.txt
+    - question_format: md
+      question: >
+        # Change folder
+
+        Now change back into the parent folder.
+      answer: # This is the answer for this q, and setup for next q
+            term_format: txt
+            term: "cd .."

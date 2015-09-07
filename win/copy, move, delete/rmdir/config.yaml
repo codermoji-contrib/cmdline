@@ -1,0 +1,36 @@
+os: windows # windows | linux | osx
+level: 1 # Difficulty level 1-5
+status: draft # could be active | disabled | draft
+setup:
+    script: mkfs.py
+sequence: # Must be ordered (sequence!)
+    - question_format: md
+      question: >
+        # Remove a folder
+
+        List the contents in the current folder.
+      filesystem: fs1.yaml
+      answer:
+            term_format: txt
+            term: "dir"
+            termoutput: t1.txt
+    - question_format: md
+      question: >
+        # Remove a folder
+
+        Remove the *empty* folder `temp`.
+      answer:
+            term_format: txt
+            term: "rmdir temp"
+            termoutput: t2.txt
+    - question_format: md
+      question: >
+        # Remove a folder
+
+        List the contents again, see that the `temp` folder is
+        missing.
+      filesystem: fs2.yaml
+      answer:
+            term_format: txt
+            term: "dir"
+            termoutput: t3.txt

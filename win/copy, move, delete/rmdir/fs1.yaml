@@ -1,0 +1,16 @@
+- name: backups
+  tree:
+  - {name: buckets.txt, type: txt}
+  - {name: buffer.txt, type: txt}
+  - {name: chairpersons.txt, type: txt}
+  - {name: feed.txt, type: txt}
+  - {name: fountains.txt, type: txt}
+  - {name: lookout.txt, type: txt}
+  - {name: pump.txt, type: txt}
+  - {name: restaurant.txt, type: txt}
+  - {name: secrets.txt, type: txt}
+  - {name: welder.txt, type: txt}
+  type: folder
+- name: temp
+  tree: []
+  type: folder

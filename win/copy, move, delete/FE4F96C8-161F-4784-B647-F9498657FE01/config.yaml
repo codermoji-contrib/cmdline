@@ -1,0 +1,83 @@
+os: windows # windows | linux | osx
+level: 1 # Difficulty level 1-5
+status: draft # could be active | disabled | draft
+setup:
+    script: mkfs.py  # This gets run to set up the env for term cmds.
+sequence: # Must be ordered (sequence!)
+    - question_format: md
+      question: >
+        # Copy a file
+
+        In the terminal, there is a file called `secrets.txt`. Make a
+        copy of this file. Call it `secrets2.txt`.
+      term: termstart.txt  # Will be displayed in term at start.
+      filesystem: fs1.yaml
+      editor:
+          - name: secrets.txt
+            contents: secrets.txt
+            locked: true
+      answer: # This is the answer for this q, and setup for next q
+            term_format: txt
+            term: "copy secrets.txt secrets2.txt"
+            termoutput: termoutput.txt
+    - question: question.md
+      answer: # This is the answer for this q, and setup for next q
+            term_format: txt
+            term: "echo Hello!"
+            termoutput: t2.txt
+    - question: >
+        # Loading term cmd from file
+
+        Testing whether the term command can be loaded from file.
+
+        Use the hint to verify and move on.
+      answer:
+            term: termcmd.txt
+            termoutput: t3.txt
+    - question_format: md
+      question: >
+          # Edit secrets
+
+          Add two lines in the open space, one containing only the word
+          `cats`, and on the next line only the word `dogs`.
+      filesystem: fs1.yaml
+      editor:
+          - name: secrets.txt
+            contents: secrets.txt
+            locked: false
+          - name: secrets2.txt
+            contents: secrets2.txt
+            locked: true
+      answer:
+          editor:
+              - name: secrets.txt
+                contents: secrets.txt
+    - question_format: md
+      question: >
+        # Show the files
+
+        You copied the file. Now list the files in the term
+        to see that your copy is there.
+      answer:
+            term_format: txt
+            term: "dir"
+            termoutput: t4.txt
+comments: >
+    file1 and file2 stay unchanged from question to
+    answer stage, but in the output stage, one of the
+    files changes. The files section structure is of
+    the form - "filename": localfileforvalues
+
+    This .yaml is an intermediate that allows me to
+    store the question metadata in files. When uploading
+    to the server, I will make json structures, where
+    the actual file contents will get written into the
+    required fields as base64 (or 32 or whatever)
+    encoding, and then decode upstream. Compression can
+    also get involved as some point.
+
+    The files appear in their own section, because we
+    only need that to tell us which files will be
+    involved.  Once we know that we can do the
+    substitution operations when necessary
+    according to the recipe.

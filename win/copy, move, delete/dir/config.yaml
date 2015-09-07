@@ -1,0 +1,16 @@
+os: windows # windows | linux | osx
+level: 1 # Difficulty level 1-5
+status: draft # could be active | disabled | draft
+setup:
+    script: mkfs.py  # This gets run to set up the env for term cmds.
+sequence: # Must be ordered (sequence!)
+    - question_format: md
+      question: >
+        # View folder contents.
+
+        Type the command to view the contents of the folder you're in.
+      filesystem: fs1.yaml
+      answer: # This is the answer for this q, and setup for next q
+            term_format: txt
+            term: "dir"
+            termoutput: t1.txt

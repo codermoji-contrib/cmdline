@@ -1,0 +1,9 @@
+total 64
+-rw-r--r--@ 1 calebhattingh  staff    33  6 Jul 15:02 file1.txt
+-rw-r--r--@ 1 calebhattingh  staff    33  6 Jul 15:02 file2.txt
+-rw-r--r--@ 1 calebhattingh  staff    33  6 Jul 15:02 file3.txt
+-rw-r--r--@ 1 calebhattingh  staff  1109  6 Jul 14:58 question.json
+-rw-r--r--@ 1 calebhattingh  staff   995  6 Jul 15:01 question.yaml
+-rw-r--r--@ 1 calebhattingh  staff    35  6 Jul 15:03 term.txt
+-rw-r--r--@ 1 calebhattingh  staff    29  6 Jul 14:37 termanswer.txt
+-rw-r--r--@ 1 calebhattingh  staff     6  6 Jul 15:04 termcmd.txt

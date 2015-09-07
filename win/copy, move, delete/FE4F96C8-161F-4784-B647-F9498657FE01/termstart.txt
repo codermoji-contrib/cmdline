@@ -1,0 +1,7 @@
+This is termstart.txt.
+$ How does it look?
+C:\> Blah.
+
+
+
+Last line.

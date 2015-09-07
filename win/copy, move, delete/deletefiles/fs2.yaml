@@ -1,0 +1,9 @@
+- {name: assignments.tmp, type: tmp}
+- {name: butt.tmp, type: tmp}
+- {name: company.tmp, type: tmp}
+- {name: cupful.tmp, type: tmp}
+- {name: edge.txt, type: txt}
+- {name: guns.tmp, type: tmp}
+- {name: journal.txt, type: txt}
+- {name: june.tmp, type: tmp}
+- {name: regulators.txt, type: txt}

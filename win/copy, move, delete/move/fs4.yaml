@@ -1,0 +1,14 @@
+- {name: calculation.txt, type: txt}
+- {name: chits.txt, type: txt}
+- {name: implementations.txt, type: txt}
+- {name: jack.txt, type: txt}
+- {name: mules.txt, type: txt}
+- {name: originals.txt, type: txt}
+- {name: preserver.txt, type: txt}
+- {name: rounds.txt, type: txt}
+- name: secretsfolder
+  tree:
+  - {name: secrets.txt, type: txt}
+  type: folder
+- {name: subjects.txt, type: txt}
+- {name: thermometer.txt, type: txt}

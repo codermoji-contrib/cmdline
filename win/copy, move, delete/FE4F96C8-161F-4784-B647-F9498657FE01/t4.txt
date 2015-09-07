@@ -1,0 +1,10 @@
+ Volume in drive C is CODERMOJI
+ Volume Serial Number is 0100-0004
+
+ Directory of C:\Codermoji
+
+25/08/2015  05:54 PM    <DIR>          nested
+25/08/2015  05:54 PM                 4 secrets.txt
+25/08/2015  05:54 PM                 4 secrets2.txt
+               2 File(s)            110 bytes
+               1 Dir(s)  35,607,793,664 bytes free

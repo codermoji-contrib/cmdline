@@ -1,0 +1,8 @@
+ Volume in drive C is CODERMOJI
+ Volume Serial Number is 0100-0004
+
+ Directory of C:\Codermoji
+
+25/08/2015  05:54 PM    <DIR>          other
+               0 File(s)             68 bytes
+               1 Dir(s)  35,607,805,952 bytes free

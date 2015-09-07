@@ -1,0 +1,37 @@
+os: windows # windows | linux | osx
+level: 1 # Difficulty level 1-5
+status: draft # could be active | disabled | draft
+setup:
+    script: mkfs.py
+sequence: # Must be ordered (sequence!)
+    - question_format: md
+      question: >
+        # Copy a file
+
+        First list the contents.
+      filesystem: fs1.yaml
+      answer:
+            term_format: txt
+            term: 'dir'
+            termoutput: t1.txt
+    - question_format: md
+      question: >
+        # Copy a file
+
+        Make a copy of `secrets.txt`. Call the copy `s2.txt`.
+      filesystem: fs2.yaml
+      answer:
+            term_format: txt
+            term: 'copy secrets.txt s2.txt'
+            termoutput: t2.txt
+    - question_format: md
+      question: >
+        # Copy a file
+
+        List the contents of this folder. Your copy will be
+        present.
+      filesystem: fs3.yaml
+      answer:
+            term_format: txt
+            term: 'dir'
+            termoutput: t3.txt

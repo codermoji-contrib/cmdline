@@ -1,0 +1,3 @@
+- {name: edge.txt, type: txt}
+- {name: journal.txt, type: txt}
+- {name: regulators.txt, type: txt}

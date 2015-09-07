@@ -1,0 +1,6 @@
+- {name: evaluations.txt, type: txt}
+- {name: goggles.txt, type: txt}
+- {name: groom.txt, type: txt}
+- {name: secrets.txt, type: txt}
+- {name: watches.txt, type: txt}
+- {name: yells.txt, type: txt}

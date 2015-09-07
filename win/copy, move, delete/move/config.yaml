@@ -1,0 +1,57 @@
+os: windows # windows | linux | osx
+level: 1 # Difficulty level 1-5
+status: draft # could be active | disabled | draft
+setup:
+    script: mkfs.py
+sequence: # Must be ordered (sequence!)
+    - question_format: md
+      question: >
+        # Move a file
+
+        First list the contents.
+      filesystem: fs1.yaml
+      answer:
+            term_format: txt
+            term: 'dir'
+            termoutput: t1.txt
+    - question_format: md
+      question: >
+        # Move a file
+
+        Move the file `secrets.txt` into `secretsfolder/`.
+      filesystem: fs2.yaml
+      answer:
+            term_format: txt
+            term: 'move secrets.txt secretsfolder'
+            termoutput: t2.txt
+    - question_format: md
+      question: >
+        # Move a file
+
+        List the contents again, see that `secrets.txt` is now missing
+        from the current folder.
+      filesystem: fs3.yaml
+      answer:
+            term_format: txt
+            term: 'dir'
+            termoutput: t3.txt
+    - question_format: md
+      question: >
+        # Move a file
+
+        Change into the `secretsfolder/` folder.
+      filesystem: fs4.yaml
+      answer:
+            term_format: txt
+            term: "cd secretsfolder"
+            termoutput: t4.txt
+    - question_format: md
+      question: >
+        # Move a file
+
+        List the contents, to show that the moved file is here.
+      cwd: secretsfolder
+      answer:
+            term_format: txt
+            term: 'dir'
+            termoutput: t5.txt

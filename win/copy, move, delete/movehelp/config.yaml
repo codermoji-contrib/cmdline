@@ -1,0 +1,13 @@
+os: windows # windows | linux | osx
+level: 1 # Difficulty level 1-5
+status: draft # could be active | disabled | draft
+sequence: # Must be ordered (sequence!)
+    - question_format: md
+      question: >
+        # Command help
+
+        Show the help of the `move` command.
+      answer: # This is the answer for this q, and setup for next q
+            term_format: txt
+            term: "move /?"
+            termoutput: t1.txt

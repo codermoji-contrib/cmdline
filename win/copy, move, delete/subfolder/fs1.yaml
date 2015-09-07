@@ -1,0 +1,9 @@
+- {name: __file0__, type: ''}
+- {name: __file1__, type: ''}
+- {name: __file2__, type: ''}
+- name: sub
+  tree:
+  - {name: __file4__, type: ''}
+  - {name: __file5__, type: ''}
+  - {name: __file6__, type: ''}
+  type: folder

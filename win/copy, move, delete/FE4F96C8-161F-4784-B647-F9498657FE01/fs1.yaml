@@ -1,0 +1,6 @@
+- name: nested
+  tree:
+  - {name: test.txt, type: txt}
+  type: folder
+- {name: secrets.txt, type: txt}
+- {name: secrets2.txt, type: txt}

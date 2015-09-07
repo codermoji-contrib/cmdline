@@ -1,0 +1,43 @@
+os: windows # windows | linux | osx
+level: 1 # Difficulty level 1-5
+status: draft # could be active | disabled | draft
+sequence: # Must be ordered (sequence!)
+    - question_format: md
+      question: >
+        # Create a folder
+
+        Create a folder called `other`.
+      answer:
+            term_format: txt
+            term: "mkdir other"
+            termoutput: t1.txt
+    - question_format: md
+      question: >
+        # Create a folder
+
+        Now list the items to show your new folder in the list.
+      filesystem: fs1.yaml
+      answer:
+            term_format: txt
+            term: "dir"
+            termoutput: t2.txt
+    - question_format: md
+      question: >
+        # Create a folder
+
+        Now make a folder called `more stuff`.
+      filesystem: fs2.yaml
+      answer:
+            term_format: txt
+            term: 'mkdir "more stuff"'
+            termoutput: t3.txt
+    - question_format: md
+      question: >
+        # Create a folder
+
+        Now list the items to show both new folders.
+      filesystem: fs3.yaml
+      answer:
+            term_format: txt
+            term: "dir"
+            termoutput: t4.txt
