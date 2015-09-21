@@ -1,4 +1,4 @@
-# Windows Command Prompt
+# Windows Command Prompt <i class="fa fa-windows"></i>
 
 Command Prompt, also known as `cmd.exe` or `cmd` (after its executable file name),
 is the command-line interpreter on Windows NT, Windows CE, OS/2 and eComStation

@@ -1,4 +1,4 @@
-# Bash
+# Bash  <i class="fa fa-apple"></i> <i class="fa fa-linux"></i>
 
 Bash is a Unix shell and command language written by Brian Fox for the GNU
 Project as a free software replacement for the Bourne shell. Released in 1989,
