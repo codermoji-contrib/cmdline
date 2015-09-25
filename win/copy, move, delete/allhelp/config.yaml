@@ -6,7 +6,7 @@ sequence: # Must be ordered (sequence!)
       question: >
         # Command help
 
-        Show the help screen for all the command.
+        Show the help screen for *all* the commands.
       answer: # This is the answer for this q, and setup for next q
             term_format: txt
             term: "help"
