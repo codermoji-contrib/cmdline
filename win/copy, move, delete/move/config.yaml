@@ -39,7 +39,7 @@ sequence: # Must be ordered (sequence!)
       question: >
         # Move a file
 
-        Change into the `secretsfolder/` folder.
+        Change into the `secretsfolder` folder.
       filesystem: fs4.yaml
       answer:
             term_format: txt
