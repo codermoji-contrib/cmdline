@@ -18,7 +18,7 @@ sequence: # Must be ordered (sequence!)
       question: >
         # Move a file
 
-        Move the file `secrets.txt` into `secretsfolder/`.
+        Move the file `secrets.txt` into the folder called `secretsfolder`.
       filesystem: fs2.yaml
       answer:
             term_format: txt
