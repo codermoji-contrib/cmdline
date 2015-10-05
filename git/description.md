@@ -1,9 +1,14 @@
-# Git
+# Git <i class="fa fa-github"></i>
 
-Git (/ɡɪt/) is a distributed revision control system with an emphasis on
-speed, data integrity, and support for distributed, non-linear
-workflows. Git was initially designed and developed by Linus Torvalds for
-Linux kernel development in 2005, and has since become the most widely adopted
-version control system for software development.
+Git is a tool that enables you to track changes to files.
+It is called a **version control system**. You can change a file
+back to a previous version, restore deleted files, and even track down
+when a particular line was added to a file (and by who!).
+
+Coders use Git extensively.  There are many open-source
+programs online at [Github](https://github.com/) or
+[Bitbucket](https://bitbucket.org/). Git makes it possible to
+[collaborate](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1)
+with other coders. This makes coding a lot more social than you might think!
 
 [More about Git on Wikipedia](https://en.wikipedia.org/wiki/Git_(software))
