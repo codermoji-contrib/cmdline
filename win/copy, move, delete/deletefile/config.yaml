@@ -26,7 +26,7 @@ sequence: # Must be ordered (sequence!)
             termoutput: t2.txt
     - question_format: md
       question: >
-        # Rename with `move`
+        # Delete a file
 
         List the contents. The file is gone.
       filesystem: fs3.yaml
